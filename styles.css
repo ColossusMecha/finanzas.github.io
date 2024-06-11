@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffdaf3;
+    margin: 0;
+    padding: 0;
+} /*estilo del body principal*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}/*estilo del título*/
+
+.form-section, .history-section, .chart-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}/*estilo del historial y la gráfica (texto)*/
+
+h2 {
+    text-align: center;
+    color: #8c0f5a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #8c0f5a;
+    display: inline-block;
+    padding-bottom: 5px;
+} /*estilo del título "historial" y "gráfica"*/
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #f74be0;
+    color: #f7e1f7;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} /*Estilo botón*/
+
+button:hover {
+    background-color: #b30077;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}/*Estilo botón al ser tocado con el cursor*/
+
+li {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid ;
+    border-left-color: #6d074e;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li.income {
+    border-left-color: #28a745;
+} /* estilo de los ingresos*/
+li.expense {
+    border-left-color: #dc3545;
+} /*estilo de los gastos*/
+.delete-btn {
+    font-size: 0.8rem; 
+    padding: 5px 5px; 
+    width: auto;
+}/*estilo del botón de eliminar en el historial*/
+/*fin*/

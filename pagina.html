@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="es"> <!--idioma-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Finanzas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> <!--cuerpo con la información que aparece en la página y la distribución de la info.-->
+    <div class="container">
+        <h1>Organizador de Finanzas Personales</h1>
+        <div class="form-section">
+            <form id="transaction-form">
+                <label for="type">Tipo: <small>Ingrese si es un ingreso o un gasto</small></label>
+                <select id="type" required>
+                    <option value="income">Ingreso</option>
+                    <option value="expense">Gasto</option>
+                </select>
+                <label for="description">Descripción: <small>Describa el tipo de artículo (por ejemplo: Comida para gato)</small></label>
+                <input type="text" id="description" required>
+                <label for="amount">Monto: <small>Indique el valor del artículo que desea ingresar</small></label>
+                <input type="number" id="amount" required> <!--en input se ingresan los datos monetarios de los gastos e ingresos.-->
+                <button type="submit">Agregar</button> <!--botón para agregar data al historial.-->
+            </form>
+        </div>
+        <div class="history-section"> <!--historial-->
+            <h2>Historial</h2>
+            <ul id="history-list"></ul>
+        </div>
+        <div class="chart-section"> <!--gráfica comparativa entre gastos e ingresos.-->
+            <h2>Gráfica de Gastos</h2>
+            <canvas id="expense-chart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!--script del chart/gráfica.-->
+    <script src="app.js"></script>
+
+        <div class="creditos"> <!--Hecho con cariño, lágrimas y mucho mucho dolor-->
+            <h3>Sarah Navith Casas Saltaren - Universidad Internacional de la Rioja</h3>
+            <p>Hecho con cariño, lágrimas, sudor y mucho mucho dolor c:</p>
+        </div>
+</body>
+</html>
+<!--fin -->
